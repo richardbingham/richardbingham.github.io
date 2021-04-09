@@ -77,4 +77,8 @@ h2 {
 		font-size: 16px;
 		flex-direction: row;
 	}
+	
+	.socials {
+		margin-left: 2em;
+	}
 }
