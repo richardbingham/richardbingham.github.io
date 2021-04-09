@@ -1,2 +1,71 @@
 @charset utf-8;
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap);
 
+body {
+	background: #fff;
+	background: -webkit-linear-gradient(to right, #fff, #fefefe);
+	background: linear-gradient(to right, #fff, #fefefe);
+	
+	display: flex;
+	
+	font-size: 25px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	line-height: 1.5em;
+	
+	margin: 5vh 5vw 5vh 5vw;
+}
+
+a, a:visited {
+	color: #444;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1, h2 {
+	font-weight: 300;
+}
+
+.projects ul {
+	list-style: none;
+	margin-left: -1em;
+}
+.projects ul>li {
+	margin: 2em 0 2em 0;
+}
+.projects li>p {
+	margin-left: 1em;
+}
+
+.pubs ul {
+	list-style: circle;
+}
+.pubs li {
+	margin: .5em 0 .5em 0;
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		font-size: 20px;
+	}
+	
+	#centre {
+		order: 2;
+		max-width: 50em;
+	}
+	#left {
+		order: 1;
+	}
+	#right {
+		order: 3;
+	}
+}
+
+@media screen and (min-width: 1250px) {
+	body {
+		font-size: 16px;
+	}
+}

@@ -2,40 +2,55 @@
 
 <html>
     <head>
-		<meta charset='utf-8'/>
+		<meta charset='utf-8'>
         <title>rich bingham</title>
-		<link rel='stylesheet' type='css' href='style.css'>
-		
+		<link rel='stylesheet' type='text/css' href='normalize.css'> 
+		<link rel='stylesheet' type='text/css' href='style.css'>
+		<script src='jquery-3.5.1.min.js'></script>
+		<script>
+		// Fade in body
+			$(document).ready(function() {
+				$('body').hide().fadeIn(500);
+			});
+		</script>
     </head>
     <body>
-        <h1>hello</h1>
-        <p>My name's Rich(ard) Bingham. I research, teach and write about digital cultures.</p>
-		<p>At the moment I have a few projects on the go:</p>
-		<ol>
-			<li>
-				<h2>De-generate!</h2>
-				<p>In which I argue against using  generational identities like 'millennial' to understand societies today. An extension of my doctoral research.</p>
-			</li>
-			<li>
-				<h2>Recursions</h2>
-					<p>A wide-ranging analysis of the videogame <cite>The Legend of Zelda: Majora's Mask</cite>. Examining this game from numerous angles, I construct a new approach to writing about digital cultural texts.</p>
-			</li>
-			<li>
-				<h2>On Realistics</h2>
-					<p>In which I uncover the 'realistic' as a complex, ever-changing 'aesthetic category'. An alternative cultural history to the existing literature on 'realism' in the arts.</p>
-			</li>
-		</ol>
-		<p>I've also written some articles...</p>
-		<ul>
-			<li><a href='https://c21.openlibhums.org/article/id/1770/'>'The Disabled Body Under Surveillance Capitalism', for <cite>C21 Literature</cite> (2020)</a></li>
-			<li><a href='https://www.alluvium-journal.org/2019/03/04/identifying-with-our-contemporaries/'>'Identifying with Our Contemporaries', for <cite>Alluvium</cite> (2019)</a></li>
-		</ul>
-		<p>...and book reviews</p>
-		<ul>
-			<li>'A review of Roderick Coover (Ed) <cite>The Digital Imaginary</cite>', for <cite>C21 Literature</cite> (forthcoming)
-			</li>
-			<li><a href='https://www.tandfonline.com/doi/full/10.1080/0950236X.2017.1371454'>'<cite>Forms: whole, rhythm, hierarchy, network</cite>, by Caroline Levine', for <cite>Textual Practice </cite> (2017)</a>
-			</li>
-		</ul>
+		<div id='centre'>
+			<h1>hello</h1>
+			<p>My name's Rich(ard) Bingham. I research, teach and write about digital cultures.</p>
+			<div class = 'projects'>
+				<p>I have a few projects on the go right now:</p>
+				<ul>
+					<li>
+						<h2>de-generate!</h2>
+						<p>An argument against using  generational identities like 'millennial' to make sense of social relations today. Builds on my doctoral research.</p>
+					</li>
+					<li>
+						<h2>recursions</h2>
+							<p>A too-close reading of the videogame <cite>The Legend of Zelda: Majora's Mask</cite>. Experiments with new ways to analyze digital cultural objects</p>
+					</li>
+					<li>
+						<h2>on realistics</h2>
+							<p>A cultural history of the 'realistic' as a complex, ever-changing aesthetic category. Reads against the grain of existing work on 'realism' in the arts.</p>
+					</li>
+				</ul>
+			</div>
+			<div class = 'pubs'>
+				<p>I've also written some articles...</p>
+				<ul>
+					<li><a href='https://c21.openlibhums.org/article/id/1770/'>'The Disabled Body Under Surveillance Capitalism', for <cite>C21 Literature</cite> (2020)</a></li>
+					<li><a href='https://www.alluvium-journal.org/2019/03/04/identifying-with-our-contemporaries/'>'Identifying with Our Contemporaries', for <cite>Alluvium</cite> (2019)</a></li>
+				</ul>
+				<p>...and book reviews</p>
+				<ul>
+					<li>'A review of Roderick Coover (Ed) <cite>The Digital Imaginary</cite>', for <cite>C21 Literature</cite> (forthcoming)
+					</li>
+					<li><a href='https://www.tandfonline.com/doi/full/10.1080/0950236X.2017.1371454'>'<cite>Forms: whole, rhythm, hierarchy, network</cite>, by Caroline Levine', for <cite>Textual Practice </cite> (2017)</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id='left'></div>
+		<div id='right'></div>
     </body>
 </html>
