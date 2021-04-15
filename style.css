@@ -94,7 +94,7 @@ h2 {
 		margin: 3em 1em 3em 1em;
 		display: flex;
 	}
-	.projects p {
+	.projects ul>li>p {
 		font-size: 15px;
 	}
 	.projects li>img {
@@ -115,8 +115,5 @@ h2 {
 @media screen and (min-width: 1250px) {
 	#left, #right {
 		width: 25vw;
-	}
-	.socials {
-		margin-left: 2em;
 	}
 }
