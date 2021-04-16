@@ -1,6 +1,14 @@
 @charset utf-8;
 @import url(https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap);
 
+/* Test */
+
+/* * {
+	border: 1px solid red;
+} */
+
+/* Default/mobile */
+
 body {
 	background: #fff;
 	background: -webkit-linear-gradient(to right, #fff, #fefefe);
@@ -67,6 +75,8 @@ h2 {
 	margin-top: 3em;
 }
 
+/* Tablet */
+
 @media screen and (min-width: 768px) {
 	body {
 		flex-direction: row;
@@ -84,7 +94,7 @@ h2 {
 		width: 10vw;
 	}
 	h1 {
-		margin: 1.5em 0 1.5em 0;
+		margin: 1.75em 0 1.5em 0;
 	}
 	h2 {
 		margin-bottom: 0;
@@ -112,40 +122,44 @@ h2 {
 	}
 }
 
+/* Desktop */
+
 @media screen and (min-width: 1250px) {
 	
-	#centre::-webkit-scrollbar{
-		display: none;
-	}
-	#centre {
-		height: 90vh;
-		max-width: 50em;
-		overflow-y: scroll;
-		-ms-overflow-style: none;  /* IE and Edge */
-  		scrollbar-width: none;  /* Firefox */
+	body {
+		margin-top: 8vh;
 	}
 	body::before, body::after {
-  		position: absolute;
-		bottom: 0;  
-		height: 100%;
+  		position: absolute;  
+		height: 13%;
 		width: 100%;
 		content: "";
-		pointer-events: none; /* text still selectable */
-	
+		pointer-events: none;
 	}
 	body::before {
+		top: 7.5vh;
 		background: linear-gradient(to bottom,
-			rgba(255,255,255, 1) 7%, 
-			rgba(255,255,255, 0) 10%
+			rgba(255,255,255, 1), 
+			rgba(255,255,255, 0) 90% 
 		);		
 
 	} 
 	body::after {
+		bottom: 5.25vh;	
 		background: linear-gradient(to top,
-			rgba(255,255,255, 1) 7%, 
-			rgba(255,255,255, 0) 10%
+			rgba(255,255,255, 1),
+			rgba(255,255,255, 0) 90%
 		);
-		pointer-events: none; /* so the text is still selectable */
+	} 
+	#centre::-webkit-scrollbar{
+		display: none;
+	}
+	#centre {
+		height: 85vh;
+		max-width: 50em;
+		overflow-y: scroll;
+		-ms-overflow-style: none;  /* IE and Edge */
+  		scrollbar-width: none;  /* Firefox */
 	}
 	#left {
 		width: 25vw;
