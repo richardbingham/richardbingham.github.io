@@ -73,7 +73,7 @@ h2 {
 	}
 	#centre {
 		order: 2;
-		max-width: 50em;
+		max-width: 40em;
 	}
 	#left {
 		order: 1;
@@ -84,7 +84,7 @@ h2 {
 		width: 10vw;
 	}
 	h1 {
-		margin-bottom: 1.5em;
+		margin: 1.5em 0 1.5em 0;
 	}
 	h2 {
 		margin-bottom: 0;
@@ -114,14 +114,50 @@ h2 {
 
 @media screen and (min-width: 1250px) {
 	
-	#left {
-		width: 22vw;
-		margin-right: 3vw;
-		border-right: 1px solid black;
+	#centre::-webkit-scrollbar{
+		display: none;
+	}
+	#centre {
+		height: 90vh;
+		max-width: 50em;
+		overflow-y: scroll;
+		-ms-overflow-style: none;  /* IE and Edge */
+  		scrollbar-width: none;  /* Firefox */
+	}
+	body::before, body::after {
+  		position: absolute;
+		bottom: 0;  
+		height: 100%;
+		width: 100%;
+		content: "";
+		pointer-events: none; /* text still selectable */
 	
 	}
-	#right {
+	body::before {
+		background: linear-gradient(to bottom,
+			rgba(255,255,255, 1) 6%, 
+			rgba(255,255,255, 0) 12%
+		);		
+
+	} 
+	body::after {
+		background: linear-gradient(to top,
+			rgba(255,255,255, 1) 6%, 
+			rgba(255,255,255, 0) 12%
+		);
+		pointer-events: none; /* so the text is still selectable */
+	}
+	#left {
 		width: 25vw;
+		margin: 3vh 3vw 5vh 0;
+		border-right: 1px solid #ddd;
+	}
+	#right {
+		width: 28vw;
+	}
+	
+	.socials {
+		margin-bottom: 5em;
 	}
 
 }
