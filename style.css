@@ -140,7 +140,6 @@ h2 {
 			rgba(255,255,255, 1), 
 			rgba(255,255,255, 0) 90% 
 		);		
-
 	} 
 	body::after {
 		bottom: 5.25vh;	
@@ -169,7 +168,7 @@ h2 {
 	}
 	
 	.socials {
-		margin-bottom: 6ßem;
+		margin-bottom: 6em;
 	}
 
 }
