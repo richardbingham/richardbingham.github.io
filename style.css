@@ -142,7 +142,7 @@ h2 {
 		);		
 	} 
 	body::after {
-		bottom: 4.75vh;	
+		bottom: 4.5vh;	
 		background: linear-gradient(to top,
 			rgba(255,255,255, 1),
 			rgba(255,255,255, 0) 90%
