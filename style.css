@@ -11,8 +11,6 @@
 
 body {
 	background: #fff;
-	background: -webkit-linear-gradient(to right, #fff, #fefefe);
-	background: linear-gradient(to right, #fff, #fefefe);
 	
 	display: flex;
 	flex-direction: column;
@@ -171,7 +169,7 @@ h2 {
 	}
 	
 	.socials {
-		margin-bottom: 5em;
+		margin-bottom: 6ßem;
 	}
 
 }
