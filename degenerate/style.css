@@ -1,0 +1,158 @@
+@charset utf-8;
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap);
+
+/* Test */
+
+/* * {
+	border: 1px solid red;
+} */
+
+/* Default/mobile */
+
+body {
+	background: #fff;
+	
+	display: flex;
+	flex-direction: column;
+	
+	font-size: 16px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	line-height: 1.5em;
+	
+	margin: 5vh 5vw 5vh 5vw;
+}
+
+header {
+	text-align: center;
+}
+
+header img {
+	width: 100%;
+}
+
+a, a:visited {
+	color: #444;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1, h2 {
+	font-weight: 300;
+}
+h1 {
+	font-size: 1.5em;
+	margin: 2em 0 3em 0;
+}
+h2 {
+	font-size: 1.2em;
+	margin: 0;
+}
+#posts_preview, .socials ul {
+	margin-left: -2.6em;
+	list-style: none;
+}
+#posts_preview li {
+	margin: 3em 0 3em 0;
+	display: flex;
+	align-items: center;
+}
+.post_info p {
+	margin: .5em 0 .5em 0;
+	font-size: .9.2em;
+}
+time {
+	font-size: .8em;
+	color: #555;
+}
+#posts_preview li>img {
+	width: 30vw;
+	height: 30vw;
+	margin-right: 1em;
+}
+#posts_preview li>div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.socials {
+	text-align: center;
+	margin-top: 3em;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+	body {
+		flex-direction: row;
+	}
+	#centre {
+		order: 2;
+		max-width: 40em;
+	}
+	#left {
+		order: 1;
+		width: 10vw;
+	}
+	#right {
+		order: 3;
+		width: 10vw;
+	}
+	h1 {
+		margin: 1.75em 0 3em 0;
+	}
+	h2 {
+		margin-bottom: 0;
+	}
+	#posts_preview li {
+		margin: 3em 1em 3em 1em;
+		align-items: flex-start;
+	}
+	#post_info p {
+		font-size: 15px;
+	}
+	#posts_preview li>img {
+		width: 15vw;
+		height: 15vw;
+		margin-right: 2.5em;
+	}
+	#posts_preview li>div {
+		margin-top: 1em;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1250px) {
+	
+	body {
+		margin-top: 8vh;
+	}
+	#posts_preview li {
+		margin: 5em 1em 5em 1em;
+	}
+	#posts_preview li>img {
+		width: 10em;
+		height: 10em;
+	}
+	#centre {
+		max-width: 50em;
+	}
+	#left {
+		width: 20vw;
+	}
+	#right {
+		width: 20vw;
+	}
+	
+	.socials {
+		margin-bottom: 6em;
+	}
+
+}
