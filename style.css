@@ -47,14 +47,14 @@ h2 {
 .projects li {
 	margin: 3em 0 3em 0;
 }
-.projects li>img {
+.projects li img {
 	width: 70vw;
 	height: 70vw;
 }
-.projects li>p {
+.projects li p {
 	margin-left: 1em;
 }
-.projects li>div {
+.projects li div {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -97,20 +97,20 @@ h2 {
 	h2 {
 		margin-bottom: 0;
 	}
-	.projects ul>li {
+	.projects ul li {
 		text-align: left;
 		margin: 3em 1em 3em 1em;
 		display: flex;
 	}
-	.projects div>p {
+	.projects div p {
 		font-size: 15px;
 	}
-	.projects li>img {
+	.projects li img {
 		width: 150px;
 		height: 150px;
 		margin-right: 2.5em;
 	}
-	.projects li>div {
+	.projects li div {
 		display: flex;
 		justify-content: center;
 		text-align: left;
