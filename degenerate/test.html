@@ -1,0 +1,335 @@
+<!doctype html>
+<html>
+<head>
+<title>de-generate!</title>
+
+	<meta name='viewport' content='width=device-width'>
+	<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap" rel="stylesheet">
+<!--- SCRIPTS --->
+<script src="../jquery-3.5.1.min.js"></script>
+<style src="normalize.css"></style>
+<style>
+
+/* * {
+		border: 1px solid red;
+}*/ 
+	
+@media screen and (min-width: 768px) {
+
+	body {
+		margin: 0;
+		background-color: #fff;
+		font-family: 'Quicksand', sans-serif;
+		color: #151515;
+		font-size: 22px;
+	}
+	.nav_image {
+		margin: 0;
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		background-image: url('degenerate_header.png');
+		background-position: center;
+		background-size: cover;
+		overflow: hidden;
+	}
+	.images {
+		order: 2;
+		flex: 1 0 0vw;		
+	}
+	article {
+		position: absolute;
+		top: 85vh;
+		left: 12vw;
+		width: 28em;
+		padding-left: 1.5em;
+		display: flex;
+		flex-direction: column;
+		background-color: #fff;
+		overflow-x: hidden;
+	}
+	nav {
+		font-size: 85%;
+		order: 1;
+		flex: 0 0 4em;
+		flex-shrink: 0;
+		writing-mode: vertical-lr; 
+		display: flex;
+		flex-direction: row;
+		justify-items: flex-start;
+		padding: 3em 0 0 0;
+		border-right: 1px solid #fff;
+		color: #fff;
+		background: rgba(255,255,255, .1);
+		transition: .7s;
+	}
+	nav:hover {
+		background: rgba(255,255,255, .5);
+		color: #151515;
+		transition: .7s;
+	}
+	nav ul {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+	}
+	nav ul li {
+		margin: 2em .4em;
+	}
+	.title_card {
+		position: absolute;
+		top: -80vh;
+		background-color: white;
+		padding: 1em;
+		margin: 0;
+		margin: 5vh 0 3vh 0;
+	}
+	.title_card h2 {
+		margin: 0;
+	}
+	.article_body {
+		padding-top: 1.5em;
+		width: 50em;
+	}
+	.article_body p {
+		width: 20em;
+		text-align: justify;
+	}
+	.note {
+		font-size: .75em;
+		display: inline-block; 
+		position: relative; 
+		float: right;
+		clear: both;
+		top: -.8em;
+		right: 29.75em;
+		cursor: pointer;
+	}
+	.note > .ref {
+		text-align: left;
+		text-indent: -1em;
+		width: 8.25em;
+	} 
+	.ref_num {
+		color: #888;
+		font-size: .8em;
+		font-weight: bold;
+		vertical-align: super;
+		line-height: 1.5em;
+	}
+	.note:first-of-type {
+		top: .4em;
+	}
+	.ref a {
+        color: inherit;
+    }
+	.ref_inactive {
+		display: inline;
+	}
+	.ref_active {
+		display: none;
+	}
+	
+}
+/*	
+@media screen and (min-width: 1250px) {
+	
+	body {
+		margin: 0;
+		background-color: #fff;
+		font-family: 'Quicksand', sans-serif;
+		color: #151515;
+		font-size: 18px;
+	}
+	.outer_flex {
+		display: flex;
+		height: 100vh;
+		align-content: flex-start;
+		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap-reverse;
+		width: 100vw;
+	} 
+	.nav_image {
+		order: 1;
+		flex: 1 0 0vw;		
+		display: flex;
+		background-image: url('degenerate_header.png');
+		background-position: center;
+		background-size: cover;
+	}
+	.images {
+		order: 1;
+		flex: 1 0 0vw;		
+		height: 100vh;
+	}
+	article {
+		order: 3;
+		flex: 0 1 40vw;
+		margin: 5vh 0vw 5vh 5vw;
+		display: flex;
+		flex-direction: column;
+	}
+	nav {
+		font-size: 85%;
+		order: 2;
+		flex: 0 0 4em;
+		min-width: 4em;
+		flex-shrink: 0;
+		writing-mode: vertical-lr; 
+		display: flex;
+		flex-direction: row;
+		justify-items: flex-start;
+		padding: 6em 0 0 0;
+		border-left: 1px solid #fff;
+		color: #fff;
+		background: rgba(255,255,255, .1);
+		transition: .7s;
+	}
+	nav:hover {
+		background: rgba(255,255,255, .5);
+		color: #151515;
+		transition: .7s;
+	}
+	nav ul {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+	}
+	nav ul li {
+		margin: 2em .4em;
+	}
+	.title_card * {
+		margin: 0;
+		margin: 5vh 0 3vh 0;
+	}
+	.title_card h1 {
+		font-size: 200%;
+		margin-bottom: 3em;
+	}
+	.article_body {
+		width: 50em;
+		height: 75vh;
+		overflow: scroll;
+		-ms-overflow-style: none;  
+  		scrollbar-width: none; 
+	}
+	.article_body::-webkit-scrollbar {
+  		display: none;
+	}
+	.article_body p {
+		max-width: 30em; 
+		min-width: 30em;
+		text-align: justify;
+	}
+	.note {
+		font-size: .75em;
+		display: inline-block; 
+		position: relative; 
+		float: right;
+		clear: both;
+		top: -.8em;
+		margin-right: 5em;
+		cursor: pointer;
+	}
+	.note > .ref {
+		text-align: left;
+		text-indent: -1em;
+		min-width: 18em;
+		max-width: 18em;
+	} 
+	.ref_num {
+		color: #888;
+		font-size: .8em;
+		font-weight: bold;
+		vertical-align: super;
+		line-height: 1.5em;
+	}
+	.note:first-of-type {
+		top: .4em;
+	}
+	.ref a {
+        color: inherit;
+    }
+	.ref_inactive {
+		display: inline;
+	}
+	.ref_active {
+		display: none;
+	}
+	
+}
+*/	
+</style>
+</head>
+<body>
+<div class='outer_flex'>
+	<div class='nav_image'>
+		<div class='images'></div>
+		<nav>
+			<h1>de-generate!</h1>
+			<ul>
+				<li>About</li>
+			</ul>
+		</nav>
+	</div>
+	<article>
+	<div class='title_card'>
+			<h2>Introduction</h2>
+			<p>An introduction to the blog</p>
+			<time datetime='2021-04-18'>18.04.21 </time>
+	</div>
+	<div class='article_body'>
+		<aside class='note'>
+                <p class='ref'>
+					<span class='ref_inactive'>1. Vyacheslav Onyshchenko (2010) &#8230;</span>
+					<span class='ref_active'>Vyacheslav Onyshchenko, 'The concept of “fate” in the Medieval Japanese War Tales: its origins and changes through the 10th-13th centuries’, <cite>Journal of International Cultural Studies</cite>, 16 (2010): 135-147 [<a href="http://hdl.handle.net/10097/00120328">Link</a> - accessed 16 May 2020]</span>
+				</p>
+				<p class='ref'>
+					<span class='ref_inactive'>2. Paul Varley (1994) &#8230;</span><span class='ref_active'>Paul Varley, <cite>Warriors of Japan: As Portrayed in the War Tales</cite> (Honolulu: University of Hawaii Press, 1994), p. 86</span>
+				</p>
+		</aside>   
+		<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+		<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+		<aside class='note'>
+                <p class='ref'>
+					1. <span class='ref_inactive'>Vyacheslav Onyshchenko (2010) &#8230;</span>
+					<span class='ref_active'>Vyacheslav Onyshchenko, 'The concept of “fate” in the Medieval Japanese War Tales: its origins and changes through the 10th-13th centuries’, <cite>Journal of International Cultural Studies</cite>, 16 (2010): 135-147 [<a href="http://hdl.handle.net/10097/00120328">Link</a> - accessed 16 May 2020]</span>
+				</p>
+				<p class='ref'>
+					2. <span class='ref_inactive'>Paul Varley (1994) &#8230;</span><span class='ref_active'>Paul Varley, <cite>Warriors of Japan: As Portrayed in the War Tales</cite> (Honolulu: University of Hawaii Press, 1994), p. 86</span>
+				</p>
+		</aside>   
+		<p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p> 
+	</div> 
+	</article>
+</div>
+<script>
+// SIDENOTES 
+$(document).ready(function() {	
+	var refNo = 0;
+	if ($(window).width() >= 768) {
+		$('.ref').click(function() {
+			var refCheck = $(this).text().split('.')[0];
+			if (refNo != refCheck) {
+				$(this).find('.ref_inactive').hide();
+				$(this).find('.ref_active').fadeIn(350);
+				$('.ref').not(this).each(function() {
+					$(this).find('.ref_active').fadeOut();
+					$(this).find('.ref_inactive').delay(350).fadeIn();
+				});
+				refNo = refCheck;
+			} else {
+				$('.ref_active').fadeOut();
+				$('.ref_inactive').delay(350).fadeIn();
+				refNo = 0;
+			}
+		});
+	}
+});
+</script>
+</body>
+</html>

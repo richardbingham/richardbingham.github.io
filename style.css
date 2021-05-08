@@ -129,23 +129,23 @@ h2 {
 	}
 	body::before, body::after {
   		position: absolute;  
-		height: 8%;
+		height: 5%;
 		width: 100%;
 		content: "";
 		pointer-events: none;
 	}
 	body::before {
-		top: 7.5vh;
+		top: 7.75vh;
 		background: linear-gradient(to bottom,
-			rgba(255,255,255, 1) 30%, 
-			rgba(255,255,255, 0) 100%
+			rgba(255,255,255, 1), 
+			rgba(255,255,255, 0)
 		);		
 	} 
 	body::after {
-		bottom: 4.5vh;	
+		bottom: 7vh;	
 		background: linear-gradient(to top,
-			rgba(255,255,255, 1) 30%,
-			rgba(255,255,255, 0) 100%
+			rgba(255,255,255, 1),
+			rgba(255,255,255, 0)
 		);
 	} 
 	#centre::-webkit-scrollbar{

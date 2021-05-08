@@ -1,5 +1,5 @@
 @charset utf-8;
-@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap);
 
 /* Test */
 
@@ -9,17 +9,13 @@
 
 /* Default/mobile */
 
-body {
-	background: #fff;
-	
+body {	
 	display: flex;
 	flex-direction: column;
-	
-	font-size: 16px;
+	font-size: 17px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
 	line-height: 1.5em;
-	
 	margin: 5vh 5vw 5vh 5vw;
 }
 
@@ -84,6 +80,54 @@ time {
 	margin-top: 3em;
 }
 
+/* Article */
+
+nav>h1 {
+	font-size: 1em;
+	margin: -.5em;
+	color: #444;
+}
+
+article {
+	margin-top: 2em;
+	font-size: 1.1em;
+}
+.title_card {
+	margin-top: 2em;
+}
+
+.article_body {
+	margin-top: 1em;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.article_body p {
+	margin: .5em 0;
+}
+.citation {
+	font-size: .7em;
+	color: #444;
+}
+.note {
+	order: 100;
+	margin-top: -.5em;
+	font-size: .9em;
+	color: #444;
+} 
+.note:first-of-type {
+	margin-top: 2em;
+}
+.note > .ref {
+	text-align: left;
+	text-indent: -1em;
+	margin-left: 1em;
+} 
+.ref sub {
+	font-size: .85em;
+}
+
 /* Tablet */
 
 @media screen and (min-width: 768px) {
@@ -92,15 +136,18 @@ time {
 	}
 	#centre {
 		order: 2;
-		max-width: 40em;
+		max-width: 45em;
+		flex: 0 0 auto;
 	}
 	#left {
 		order: 1;
 		width: 10vw;
+		flex: 1 1 auto;
 	}
 	#right {
 		order: 3;
 		width: 10vw;
+		flex: 1 1 auto;
 	}
 	h1 {
 		margin: 1.75em 0 3em 0;
@@ -124,6 +171,57 @@ time {
 		margin-top: 1em;
 		display: flex;
 		justify-content: center;
+	}
+	
+	/* Article */
+	
+	nav {
+		margin-top: -2em;
+	}
+	
+	.article_body {
+		display: block;
+		margin-top: 3em;
+		font-size: 1em;
+		text-align: justify;
+		width: 110%;
+	}
+	.article_body p {
+		max-width: 68%;
+		margin: 1em 0;
+		line-height: 1.7em;
+	}
+	.note {
+		z-index: 0;
+		margin-top: 0;
+		font-size: .75em;
+		line-height: 1.5em;
+		position: absolute; 
+		width: 27%;
+		left: 72%;
+		cursor: pointer;
+	}
+	.note > .ref {
+		margin-left: 0;	
+	} 
+	.ref_num {
+		color: #888;
+		font-size: .8em;
+		font-weight: bold;
+		vertical-align: super;
+		line-height: 1.5em;
+	}
+	.note:first-of-type {	
+		margin-top: 0;
+	}
+	.ref a {
+        color: inherit;
+    }
+	.ref_inactive {
+		display: inline;
+	}
+	.ref_active {
+		display: none;
 	}
 }
 
@@ -150,7 +248,6 @@ time {
 	#right {
 		width: 20vw;
 	}
-	
 	.socials {
 		margin-bottom: 6em;
 	}
