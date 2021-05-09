@@ -82,10 +82,17 @@ time {
 
 /* Article */
 
-nav>h1 {
-	font-size: 1em;
-	margin: -.5em;
-	color: #444;
+nav {
+	position: absolute;
+	top: 0;
+	left: 2em;
+	text-align: left;
+	height: 1em;
+}
+	
+
+nav a, nav a:visited {
+	color: #aaa;
 }
 
 article {
@@ -136,8 +143,9 @@ article {
 	}
 	#centre {
 		order: 2;
+		min-width: 40em;
 		max-width: 45em;
-		flex: 0 0 auto;
+		flex: 0 1 auto;
 	}
 	#left {
 		order: 1;
@@ -174,10 +182,6 @@ article {
 	}
 	
 	/* Article */
-	
-	nav {
-		margin-top: -2em;
-	}
 	
 	.article_body {
 		display: block;

@@ -32,7 +32,7 @@ header img {
 }
 
 a, a:visited {
-	color: #ddd;
+	color: #bbb;
 	text-decoration: none;
 }
 
@@ -66,7 +66,7 @@ h2 {
 }
 time {
 	font-size: .8em;
-	color: #aaa;
+	color: #bbb;
 }
 #posts_preview li>img {
 	width: 30vw;
@@ -84,6 +84,60 @@ time {
 	margin-top: 3em;
 }
 
+/* Article */
+
+nav {
+	position: absolute;
+	top: 0;
+	left: 2em;
+	text-align: left;
+	height: 1em;
+}
+
+nav a, nav a:visited {
+	color: #888;
+}
+
+article {
+	margin-top: 2em;
+	font-size: 1.1em;
+}
+.title_card {
+	margin-top: 2em;
+}
+
+.article_body {
+	margin-top: 1em;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.article_body p {
+	margin: .5em 0;
+}
+.citation {
+	font-size: .7em;
+	color: #bbb;
+}
+.note {
+	order: 100;
+	margin-top: -.5em;
+	font-size: .9em;
+	color: #bbb;
+} 
+.note:first-of-type {
+	margin-top: 2em;
+}
+.note > .ref {
+	text-align: left;
+	text-indent: -1em;
+	margin-left: 1em;
+} 
+.ref sub {
+	font-size: .85em;
+}
+
 /* Tablet */
 
 @media screen and (min-width: 768px) {
@@ -92,15 +146,19 @@ time {
 	}
 	#centre {
 		order: 2;
-		max-width: 40em;
+		min-width: 40em;
+		max-width: 45em;
+		flex: 0 1 auto;
 	}
 	#left {
 		order: 1;
 		width: 10vw;
+		flex: 1 1 auto;
 	}
 	#right {
 		order: 3;
 		width: 10vw;
+		flex: 1 1 auto;
 	}
 	h1 {
 		margin: 1.75em 0 3em 0;
@@ -125,6 +183,53 @@ time {
 		display: flex;
 		justify-content: center;
 	}
+	
+	/* Article */
+	
+	.article_body {
+		display: block;
+		margin-top: 3em;
+		font-size: 1em;
+		text-align: justify;
+		width: 110%;
+	}
+	.article_body p {
+		max-width: 68%;
+		margin: 1em 0;
+		line-height: 1.7em;
+	}
+	.note {
+		z-index: 0;
+		margin-top: 0;
+		font-size: .75em;
+		line-height: 1.5em;
+		position: absolute; 
+		width: 27%;
+		left: 72%;
+		cursor: pointer;
+	}
+	.note > .ref {
+		margin-left: 0;	
+	} 
+	.ref_num {
+		color: #888;
+		font-size: .8em;
+		font-weight: bold;
+		vertical-align: super;
+		line-height: 1.5em;
+	}
+	.note:first-of-type {	
+		margin-top: 0;
+	}
+	.ref a {
+        color: inherit;
+    }
+	.ref_inactive {
+		display: inline;
+	}
+	.ref_active {
+		display: none;
+	}
 }
 
 /* Desktop */
@@ -145,12 +250,11 @@ time {
 		max-width: 50em;
 	}
 	#left {
-		width: 28vw;
+		width: 20vw;
 	}
 	#right {
-		width: 28vw;
+		width: 20vw;
 	}
-	
 	.socials {
 		margin-bottom: 6em;
 	}
