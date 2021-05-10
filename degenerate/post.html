@@ -30,7 +30,7 @@
 						<div class='title_card'>
 							<h2>Introduction</h2>
 							<p>An introduction to the blog</p>
-							<time datetime='2021-04-18'>18.04.21 </time>
+							<time datetime='2021-04-18'>18.04.21</time>
 						</div>
 					</header>
 					<main class='article_body'>
@@ -55,32 +55,23 @@
 		<div id='right'>
 		</div>
 	<script>
-		
-
-		// SIDENOTES 
-		
+		// SIDENOTES 	
 			$(document).ready(function() {
 				
 				// Place sidenotes
-				function placeNotes() {
-										
+				function placeNotes() {				
 					if ($(window).width() >= 768) {
 						$('.ref_active').hide();
 						$('.ref_inactive').show();
-						
 						var noteNum = $('.citation').last().text();	
 						var ref = document.getElementsByClassName('note');
 						var cite = document.getElementsByClassName('citation');
-						
 						var i = 0;
 						while (i < noteNum) {
 							var refLoc = $(cite[i]).position();
 							$(ref[i]).css({'top': refLoc.top - 20});
 							i++;
-						}	
-						
-						// Expand/collapse sidenotes
-						
+						}							
 					} else {
 						$('.ref_active').show();
 						$('.ref_inactive').hide();
@@ -89,6 +80,7 @@
 
 				placeNotes();
 				
+				//Open/collapse sidenotes
 				var refNo = 0;
 				$('.ref').click(function() {						
 					if ($(window).width() >= 768) {
@@ -98,7 +90,7 @@
 							$(this).find('.ref_active').fadeIn(350);
 							$('.ref').not(this).each(function() {
 								$(this).find('.ref_active').fadeOut();
-								$(this).find('.ref_inactive').fadeIn();
+								$(this).find('.ref_inactive').delay(350).fadeIn();
 							});
 							refNo = refCheck;
 						} else {

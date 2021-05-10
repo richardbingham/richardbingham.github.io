@@ -55,32 +55,24 @@
 		<div id='right'>
 		</div>
 	<script>
-		
-
 		// SIDENOTES 
 		
 			$(document).ready(function() {
 				
 				// Place sidenotes
-				function placeNotes() {
-										
+				function placeNotes() {				
 					if ($(window).width() >= 768) {
 						$('.ref_active').hide();
 						$('.ref_inactive').show();
-						
 						var noteNum = $('.citation').last().text();	
 						var ref = document.getElementsByClassName('note');
 						var cite = document.getElementsByClassName('citation');
-						
 						var i = 0;
 						while (i < noteNum) {
 							var refLoc = $(cite[i]).position();
 							$(ref[i]).css({'top': refLoc.top - 20});
 							i++;
-						}	
-						
-						// Expand/collapse sidenotes
-						
+						}							
 					} else {
 						$('.ref_active').show();
 						$('.ref_inactive').hide();
@@ -89,6 +81,7 @@
 
 				placeNotes();
 				
+				//Open/collapse sidenotes
 				var refNo = 0;
 				$('.ref').click(function() {						
 					if ($(window).width() >= 768) {
@@ -111,7 +104,6 @@
 
 				$(window).resize(function() {
 					placeNotes();
-					
 				});
 				
 			});
