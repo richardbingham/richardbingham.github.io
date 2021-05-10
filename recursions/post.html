@@ -70,7 +70,9 @@
 						var i = 0;
 						while (i < noteNum) {
 							var refLoc = $(cite[i]).position();
-							$(ref[i]).css({'top': refLoc.top - 20});
+							$(ref[i]).css({
+								'top': refLoc.top - 20,
+								'z-index': 100 - i});
 							i++;
 						}							
 					} else {

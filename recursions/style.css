@@ -199,7 +199,7 @@ article {
 		line-height: 1.7em;
 	}
 	.note {
-		z-index: -1;
+		z-index: 0;
 		margin-top: 0;
 		font-size: .75em;
 		line-height: 1.5em;
