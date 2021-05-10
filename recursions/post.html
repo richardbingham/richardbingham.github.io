@@ -91,7 +91,7 @@
 							$(this).find('.ref_active').fadeIn(350);
 							$('.ref').not(this).each(function() {
 								$(this).find('.ref_active').fadeOut();
-								$(this).find('.ref_inactive').fadeIn();
+								$(this).find('.ref_inactive').delay(350).fadeIn();
 							});
 							refNo = refCheck;
 						} else {
