@@ -207,6 +207,7 @@ article {
 		width: 27%;
 		left: 72%;
 		cursor: pointer;
+		background: #000;
 	}
 	.note > .ref {
 		margin-left: 0;	
