@@ -11,10 +11,8 @@
 
 body {
 	background: #fff;
-	
 	display: flex;
 	flex-direction: column;
-	
 	font-size: 16px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
@@ -60,7 +58,6 @@ h2 {
 	justify-content: center;
 	text-align: center;
 }
-
 .pubs ul {
 	list-style: circle;
 	margin-left: -1.2em;
@@ -71,6 +68,91 @@ h2 {
 
 .socials {
 	margin-top: 3em;
+}
+
+/* Indexes */
+#index_header p {
+	margin: 0 10% 0 10%;
+}
+#posts_preview, .socials ul {
+	margin-left: -2.6em;
+	list-style: none;
+}
+#posts_preview li {
+	margin: 3em 0 3em 0;
+	display: flex;
+	align-items: center;
+}
+.post_info p {
+	margin: .5em 0 .5em 0;
+	font-size: .9.2em;
+}
+time {
+	font-size: .8em;
+	color: #bbb;
+}
+#posts_preview li>img {
+	width: 30vw;
+	height: 30vw;
+	margin-right: 1em;
+}
+#posts_preview li>div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+/* Article */
+
+nav {
+	position: absolute;
+	top: 0;
+	left: 2em;
+	text-align: left;
+	height: 1em;
+}
+
+nav a, nav a:visited {
+	color: #888;
+}
+
+article {
+	margin-top: 2em;
+	font-size: 1.1em;
+}
+.title_card {
+	margin-top: 2em;
+}
+
+.article_body {
+	margin-top: 1em;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.article_body p {
+	margin: .5em 0;
+}
+.citation {
+	font-size: .7em;
+}
+.note {
+	order: 100;
+	margin-top: -.5em;
+	font-size: .9em;
+} 
+.note:first-of-type {
+	margin-top: 2em;
+}
+.note > .ref {
+	text-align: left;
+	text-indent: -1em;
+	margin-left: 1em;
+} 
+.ref sub {
+	font-size: .85em;
 }
 
 /* Tablet */
@@ -118,6 +200,80 @@ h2 {
 	.pubs li {
 		margin-left: 0;
 	}
+	
+	/* Indexes */
+	
+	#index_header h1 {
+		margin-bottom: 1.5em;
+	}
+	#index_header p {
+		margin: 0 25% 0 25%;
+	}
+	#posts_preview li {
+		margin: 3em 1em 3em 1em;
+		align-items: flex-start;
+	}
+	#post_info p {
+		font-size: 15px;
+	}
+	#posts_preview li>img {
+		width: 15vw;
+		height: 15vw;
+		margin-right: 2.5em;
+	}
+	#posts_preview li>div {
+		margin-top: 1em;
+		display: flex;
+		justify-content: center;
+	}
+	
+	/* Articles */
+	
+	.article_body {
+		display: block;
+		margin-top: 3em;
+		font-size: 1em;
+		text-align: justify;
+		width: 110%;
+	}
+	.article_body p {
+		max-width: 68%;
+		margin: 1em 0;
+		line-height: 1.7em;
+	}
+	.note {
+		margin: 0 0 0 -1em;
+		font-size: .75em;
+		line-height: 1.5em;
+		position: absolute; 
+		width: 27%;
+		left: 72%;
+		cursor: pointer;
+		padding-left: 1em;
+	}
+	.note > .ref {
+		margin-left: 0;	
+	} 
+	.ref_num {
+		color: #444;
+		font-size: .8em;
+		font-weight: bold;
+		vertical-align: super;
+		line-height: 1.5em;
+	}
+	.note:first-of-type {	
+		margin-top: 0;
+	}
+	.ref a {
+        color: inherit;
+    }
+	.ref_inactive {
+		display: inline;
+	}
+	.ref_active {
+		display: none;
+	}
+	
 }
 
 /* Desktop */
@@ -169,6 +325,16 @@ h2 {
 	
 	.socials {
 		margin-bottom: 6em;
+	}
+	
+	/* Indexes */
+	
+	#posts_preview li {
+		margin: 5em 1em 5em 1em;
+	}
+	#posts_preview li>img {
+		width: 10em;
+		height: 10em;
 	}
 
 }
