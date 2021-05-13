@@ -250,6 +250,7 @@ article {
 		left: 72%;
 		cursor: pointer;
 		padding-left: 1em;
+		z-index: 0;
 	}
 	.note > .ref {
 		margin-left: 0;	
