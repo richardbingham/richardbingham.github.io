@@ -1,11 +1,12 @@
-// FADE IN
-
+// FADE IN (removed)
+/*
 	$(document).ready(function() {
 		$('#centre').hide();
 		$('.banner').ready(function() {
 			$('#centre').fadeIn(750);
 		});
 	});
+*/
 
 // SIDENOTES
 
