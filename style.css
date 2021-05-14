@@ -74,8 +74,14 @@ h2 {
 }
 
 /* Indexes */
+#index_header {
+	margin-bottom: 5em;
+}
 #index_header p {
-	margin: 0 10% 0 10%;
+	margin: -1em 10% 0 10%;
+}
+#posts_preview {
+	margin-top: 2em;
 }
 #posts_preview, .socials ul {
 	margin-left: -2.6em;
@@ -211,6 +217,9 @@ article {
 	#index_header p {
 		margin: 0 25% 0 25%;
 	}
+	#index_header {
+		margin-bottom: 8em;
+	}
 	#posts_preview li {
 		margin: 3em 1em 3em 1em;
 		align-items: flex-start;
@@ -327,13 +336,13 @@ article {
 	}
 	
 	.socials {
-		margin-bottom: 6em;
+		margin-bottom: 2em;
 	}
 	
 	/* Indexes */
 	
 	#posts_preview li {
-		margin: 5em 1em 5em 1em;
+		margin: 4em 1em 4em 1em;
 	}
 	#posts_preview li>img {
 		width: 10em;
