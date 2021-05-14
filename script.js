@@ -24,7 +24,7 @@
 				while (i < noteNum) {
 					var refLoc = $(cite[i]).position();
 					$(ref[i]).css({
-						'top': refLoc.top - 20,
+						'top': refLoc.top - 8,
 						'z-index': 100 - i
 					});
 					i++;
