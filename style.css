@@ -69,6 +69,9 @@ h2 {
 .socials {
 	margin-top: 3em;
 }
+.socials li {
+	margin-bottom: 1.2em;
+}
 
 /* Indexes */
 #index_header p {
@@ -140,7 +143,6 @@ article {
 }
 .note {
 	order: 100;
-	margin-top: -.5em;
 	font-size: .9em;
 } 
 .note:first-of-type {
@@ -231,30 +233,30 @@ article {
 	
 	.article_body {
 		display: block;
-		margin-top: 3em;
+		margin: 3em 0;
 		font-size: 1em;
 		text-align: justify;
-		width: 110%;
+		width: 100%;
 	}
 	.article_body p {
-		max-width: 68%;
+		max-width: 77%;
 		margin: 1em 0;
 		line-height: 1.7em;
 	}
 	.note {
-		margin: 0 0 0 -1em;
 		font-size: .75em;
 		line-height: 1.5em;
 		position: absolute; 
-		width: 27%;
-		left: 72%;
+		width: 21%;
+		left: 79%;
+		padding: 0;
 		cursor: pointer;
-		padding-left: 1em;
 		z-index: 0;
 	}
-	.note > .ref {
-		margin-left: 0;	
-	} 
+	.ref {
+		width: 100%;
+		margin: 0;
+	}
 	.ref_num {
 		color: #444;
 		font-size: .8em;
@@ -282,7 +284,7 @@ article {
 @media screen and (min-width: 1250px) {
 	
 	body {
-		margin-top: 8vh;
+		margin: 8vh 0 0 0;
 	}
 	body::before, body::after {
   		position: absolute;  
@@ -317,7 +319,7 @@ article {
 	}
 	#left {
 		width: 25vw;
-		margin: 3vh 3vw 5vh 0;
+		margin: 3vh 3vw 5vh 0; 
 		border-right: 1px solid #ddd;
 	}
 	#right {

@@ -108,6 +108,7 @@ nav a, nav a:visited {
 	#left {
 		width: 20vw;
 		border: none;
+		margin: 0;
 	}
 	#right {
 		width: 20vw;
