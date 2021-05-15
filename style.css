@@ -173,11 +173,11 @@ article {
 
 @media screen and (min-width: 768px) {
 	body {
+		margin: inherit 0;
 		flex-direction: row;
 	}
 	#centre {
 		order: 2;
-		max-width: 40em;
 	}
 	#left {
 		order: 1;
@@ -303,35 +303,28 @@ article {
 		margin: 8vh 0 0 0;
 	}
 	body::before, body::after {
-  		position: absolute;  
-		height: 5%;
+  		position: fixed;  
+		height: 30vh;
 		width: 100%;
 		content: "";
 		pointer-events: none;
 	}
 	body::before {
-		top: 7.75vh;
+		top: 0vh;
 		background: linear-gradient(to bottom,
-			rgba(255,255,255, 1), 
-			rgba(255,255,255, 0)
+			rgba(255,255,255, 1) 25%, 
+			rgba(255,255,255, 0) 75%
 		);		
 	} 
 	body::after {
-		bottom: 7vh;	
+		bottom: 0vh;	
 		background: linear-gradient(to top,
-			rgba(255,255,255, 1),
-			rgba(255,255,255, 0)
+			rgba(255,255,255, 1) 25%,
+			rgba(255,255,255, 0) 75%
 		);
 	} 
-	#centre::-webkit-scrollbar{
-		display: none;
-	}
 	#centre {
-		height: 85vh;
-		max-width: 50em;
-		overflow-y: scroll;
-		-ms-overflow-style: none;  /* IE and Edge */
-  		scrollbar-width: none;  /* Firefox */
+		max-width: 55em;
 	}
 	#left {
 		width: 25vw;

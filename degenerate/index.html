@@ -15,7 +15,11 @@
     <body>
 		<div id='centre'>
 			<header id='index_header'>
-				<img class='banner' src='degenerate_header.png'>
+				<picture>
+					<source media='(min-width: 1200px)' srcset='degenerate_header_large.png'>
+					<source media='(min-width: 768px)' srcset='degenerate_header_medium.png'>
+					<img class='banner' src='degenerate_header_small.png' alt=''>
+				</picture>
 				<h1>de-generate!</h1>
 				<p>An argument against using  generational identities like 'millennial' to make sense of today's social relations. Builds on my doctoral research.</p>
 			</header>

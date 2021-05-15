@@ -30,8 +30,17 @@ h2 {
 	margin: 0;
 	font-family: 'Newsreader', serif;
 }
+#posts_preview li {
+	border-left: 1px solid #fff;
+}
+#posts_preview a:hover > li {
+	border-color: #ddd;
+}
+#posts_preview a:hover {
+	color: #000;
+}
 time {
-	color: #555;
+	color: #666;
 }
 .socials {
 	text-align: center;
@@ -50,11 +59,10 @@ time {
 		flex: 1 1 auto;
 	}
 	#right {
+		width: 10vw;
 		flex: 1 1 auto;
 	}
 	
-	/* Article */
-
 /* DESKTOP */
 
 @media screen and (min-width: 1250px) {
@@ -80,16 +88,6 @@ time {
 	}
 	#right {
 		min-width: 20vw;
-	}
-	
-	#posts_preview li {
-		border-left: 1px solid #fff;
-	}
-	#posts_preview a:hover > li {
-		border-color: #ddd;
-	}
-	#posts_preview a:hover {
-		color: #000;
 	}
 
 }
