@@ -79,6 +79,7 @@ time {
 		max-width: 50em;
 		overflow-y: show;
 		-ms-overflow-style: auto;   /* IE and Edge */
+		z-index: 1;
 
 	}
 	#left {
