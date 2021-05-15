@@ -304,7 +304,7 @@ article {
 	}
 	body::before, body::after {
   		position: fixed;  
-		height: 30vh;
+		height: 25vh;
 		width: 100%;
 		content: "";
 		pointer-events: none;

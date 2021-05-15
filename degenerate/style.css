@@ -78,7 +78,6 @@ time {
 		height: 100%;
 		max-width: 50em;
 		overflow-y: show;
-		overflow-x: show;
 		-ms-overflow-style: auto;   /* IE and Edge */
 	}
 	#left {
