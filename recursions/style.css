@@ -116,6 +116,7 @@ nav a, nav a:visited {
 		overflow-y: show;
 		overflow-x: show;
 		-ms-overflow-style: auto;   /* IE and Edge */
+		z-index: 1;
 	}
 	#left {
 		width: 20vw;
