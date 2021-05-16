@@ -11,8 +11,8 @@
 /* DEFAULT/MOBILE */
 
 body {
-	background: #000;
-	color: #eee;
+	background: #141517;
+	color: #ccc;
 }
 
 header {
@@ -44,6 +44,7 @@ h1 {
 	font-size: 1.5em;
 	margin: 2em 0 3em 0;
 	font-family: 'Recursive', sans-serif;
+	color: #eee;
 /*	text-shadow: 0 0 3px #ddd; */
 }
 h2 {
@@ -92,7 +93,7 @@ nav a, nav a:visited {
 	/* Article */
 	
 	.note {
-		background: #000;
+		background: #141517;
 	}
 	.ref_num {
 		color: #888;
@@ -113,9 +114,7 @@ nav a, nav a:visited {
 	#centre {
 		height: 100%;
 		max-width: 50em;
-		overflow-y: show;
 		overflow-x: show;
-		-ms-overflow-style: auto;   /* IE and Edge */
 		z-index: 1;
 	}
 	#left {

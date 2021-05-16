@@ -258,6 +258,9 @@ article {
 		margin: 1em 0;
 		line-height: 1.7em;
 	}
+	.banner {
+		margin-bottom: 1.5em;
+	}
 	.note {
 		font-size: .75em;
 		line-height: 1.5em;

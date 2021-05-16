@@ -9,6 +9,11 @@
 
 /* DEFAULT/MOBILE */
 
+body {
+	background-color: #fcfafa;
+	color: #333;
+}
+
 header {
 	text-align: center;
 	background-color: none;
@@ -24,6 +29,7 @@ h1 {
 	margin: 2em 0 3em 0;
 	font-family: 'Newsreader', serif;
 	text-decoration: none;
+	color: #222;
 }
 h2 {
 	font-size: 1.5em;
@@ -34,16 +40,23 @@ h2 {
 	border-left: 1px solid #fff;
 }
 #posts_preview a:hover > li {
-	border-color: #ddd;
+	border-color: #ccc;
 }
 #posts_preview a:hover {
-	color: #000;
+	color: #222;
 }
 time {
-	color: #666;
+	color: #777;
 }
 .socials {
 	text-align: center;
+}
+.note {
+	background: #fcfafa;
+	color: #5a5a5a;
+}
+.ref_num {
+	color: #777;
 }
 
 /* TABLET */
@@ -77,8 +90,6 @@ time {
 	#centre {
 		height: 100%;
 		max-width: 50em;
-		overflow-y: show;
-		-ms-overflow-style: auto;   /* IE and Edge */
 	}
 	#left {
 		min-width: 20vw;
