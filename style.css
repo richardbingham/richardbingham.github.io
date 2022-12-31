@@ -150,8 +150,16 @@ article {
 .article_body p {
 	margin: .5em 0;
 }
+blockquote {
+	line-height: 1.1;
+	padding-left: 1em;
+	font-size: .95em;
+}
 .citation {
 	font-size: .7em;
+}
+.other {
+	font-style: normal;
 }
 .note {
 	order: 100;
@@ -167,6 +175,20 @@ article {
 } 
 .ref sub {
 	font-size: .85em;
+}
+.article_body img {
+	width: 100%;
+	margin: 1em 0;
+}
+figure {
+	padding: 0;
+	margin: 0;
+}
+figcaption {
+	font-size: .85em;
+	margin: 0 2em 1em 0;
+	padding: 0;
+	text-align: center;
 }
 
 /* Tablet */
@@ -192,6 +214,9 @@ article {
 	}
 	h2 {
 		margin-bottom: 0;
+	}
+	.title_card {
+		padding: 0 20%;
 	}
 	.projects ul li {
 		text-align: left;
@@ -258,8 +283,18 @@ article {
 		margin: 1em 0;
 		line-height: 1.7em;
 	}
+	blockquote {
+		line-height: 1.4em;
+		max-width: 65%;
+		padding: 1em;
+		font-size: .9em;
+	}
 	.banner {
 		margin-bottom: 1.5em;
+	}
+	.article_body img, figcaption {
+		max-width: 67%;
+		padding-left: 5%;
 	}
 	.note {
 		font-size: .75em;
@@ -294,6 +329,9 @@ article {
 	}
 	.ref_active {
 		display: none;
+	}
+	sub {
+		margin-right: .3em;
 	}
 	
 }
